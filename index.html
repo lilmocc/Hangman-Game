@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Basketball Movies Hangman Game!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col">
+      <h2 class="font-weight-bold">BASKETBALL MOVIES <small>hangman game</small></h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4 bg-dark rounded p-4">
+    	<h5 class="text-primary font-italic font-weight-bold">Press any key to get started!</h5>
+      <p class="text-light">Guesses Left: <span id="guesses-left" class="font-weight-bold"></span></p>
+      <p class="text-light">Letters Played: <span id="letters-played" class="font-weight-bold"></span></p>
+      <p class="text-success font-weight-bold">Total Wins: <span id="wins"></span></p>
+      <p class="text-danger font-weight-bold">Total Losses: <span id="losses"></span></p>
+    </div>
+    <div class="col-8 mr-auto bg-white rounded">
+      <!-- input BLANK LETTERS here -->
+		<h2 id="blank-letters"></h2>
+    </div>
+	</div>
+
+	<div class="row pt-3">
+    <div class="col-12 bg-light rounded">
+			<h3 class="win-image">WINNER!</h3>
+
+      <!-- input IMAGE here after winning -->
+		</div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

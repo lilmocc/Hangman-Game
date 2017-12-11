@@ -1,0 +1,11 @@
+
+html, body {
+	background-image: url('../images/background.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+.rounded {
+  border-radius: 25px;
+  background: #FFF;
+}
