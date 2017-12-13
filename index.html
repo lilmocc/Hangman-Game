@@ -4,10 +4,11 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Basketball Movies Hangman Game!</title>
+	<title>NBA Teams Hangman Game!</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Galindo|Raleway:500" rel="stylesheet">
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 
@@ -15,29 +16,43 @@
 
 <div class="container">
 
-  <div class="row">
+  <div class="row pt-3">
     <div class="col">
-      <h2 class="font-weight-bold">BASKETBALL MOVIES <small>hangman game</small></h2>
+      <h2 class="font-weight-bold"><span id="nbateamstitle">NBA Teams</span> <img src="assets/images/nbalogo.png" id="nbalogo"></img><small>HANGMAN GAME</small></h2>
     </div>
   </div>
 
   <div class="row">
     <div class="col-4 bg-dark rounded p-4">
-    	<h5 class="text-primary font-italic font-weight-bold">Press any key to get started!</h5>
+    	<h6 id="instructions" class="text-primary font-italic font-weight-bold">Press any key to get started!</h6>
       <p class="text-light">Guesses Left: <span id="guesses-left" class="font-weight-bold"></span></p>
       <p class="text-light">Letters Played: <span id="letters-played" class="font-weight-bold"></span></p>
       <p class="text-success font-weight-bold">Total Wins: <span id="wins"></span></p>
       <p class="text-danger font-weight-bold">Total Losses: <span id="losses"></span></p>
     </div>
     <div class="col-8 mr-auto bg-white rounded">
-      <!-- input BLANK LETTERS here -->
-		<h2 id="blank-letters"></h2>
+			<h2 id="blank-letters" class="display-3 text-center">
+				<span id="0"></span>
+				<span id="1"></span>
+				<span id="2"></span>
+				<span id="3"></span>
+				<span id="4"></span>
+				<span id="5"></span>
+				<span id="6"></span>
+				<span id="7"></span>
+				<span id="8"></span>
+				<span id="9"></span>
+				<span id="10"></span>
+				<span id="11"></span>
+				<span id="12"></span>
+			</h2>
+			<h3 id="message" class="text-danger text-center"></h3>
     </div>
 	</div>
 
 	<div class="row pt-3">
     <div class="col-12 bg-light rounded">
-			<h3 class="win-image">WINNER!</h3>
+			<h3 id="win-image" class="text-center display-5 text-primary">Guess the team!</h3>
 
       <!-- input IMAGE here after winning -->
 		</div>
